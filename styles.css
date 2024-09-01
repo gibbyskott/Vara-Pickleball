@@ -65,12 +65,14 @@ body{
     height: 300px;
     background-size: contain;
     margin: auto;
+    margin-top: 70px;
 }
 .text{
     color: white;
     font-size: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    margin-top: 25px;
 }
 .stadgar{
     color: black;
@@ -78,6 +80,7 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-weight: bold;
+    margin-top: 25px;
     
 }
 a:hover{
@@ -109,24 +112,26 @@ a{
     }
     .logo{
         background-image: url(PNGtransparant500x500.png);
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         background-size: contain;
         margin: auto;
-        margin-top: -60px;
+        margin-top: 20px;
     }
     .text{
         color: white;
-        font-size: 20px;
+        font-size: 15px;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
+        margin-top: 20px;
     }
     .stadgar{
         color: black;
-        font-size: 20px;
+        font-size: 15px;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
         font-weight: bold;
+        margin-top: 15px;
         
     }
     a:hover{
