@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="main.js" defer></script>
+</head>
+<body>
+    <br> 
+    <h1 class="produkttext">Mugg</h1>
+    <div class="produktundertext">Drick din favoritdryck i en mugg - finns i tre varianter!</div>
+    <br>
+    <div class="mugg"></div>
+    <br> <br>
+    <h1 class="produkttext" >Tröja</h1>
+    <div class="produktundertext">Från kända Jako kommer här en tunn match- och träningströja som håller dig sval i heta lägen!</div>
+    <br>
+    <div class="tröja"></div>
+    <br> <br> 
+        
+      <div class="ramshop">
+        <form action="https://formsubmit.co/9b195a19cbd3927f1692b43c5c0689b2" method="POST" onsubmit="return handleSubmit()"> 
+            
+             <label class="textform" for="namn">Namn:</label>
+             <input class="väljform" id="namn" type="text" name="namn" required>
+            
+            <label class="textform" for="namn">Epost:</label>
+            <input class="väljform" id="epost" type="email" name="epost" required>
+
+            <label class="textform" for="muggar keramik">Mugg keramik + endast logga (75kr):</label>
+            <select class="väljform" id="muggar keramik" name="antal muggar keramik + endast loga (75kr)">
+                <option value="Väj antal">Välj antal</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>  
+            <label class="textform" for="muggar äktra porslin">Mugg äktra porslin + endast logga (100kr):</label>
+            <select class="väljform" id="muggar äktra porslin" name="antal muggar Äktra porslin + endast loga (100kr)">
+                <option value="Väj antal">Välj antal</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>  
+            <label class="textform" for="muggar 002">Mugg keramik + logga + 002 + namn (150kr):</label>
+            <select class="väljform" id="muggar 002" name="antal muggar keramik + loga + 002 + namn (150kr)">
+                <option value="Väj antal">Välj antal</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>  
+
+            <label class="textform" for="tröjor S">Antal tröjor S (140 kr):</label>
+            <select class="väljform" id="tröjor S" name="antal tröjor S">
+                <option value="Väj antal">Välj antal</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label class="textform" for="tröjor M">Antal tröjor M (140 kr):</label>
+            <select class="väljform" id="tröjor M" name="antal tröjor M">
+                <option value="Väj antal">Välj antal</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label class="textform" for="tröjor L">Antal tröjor L (140 kr):</label>
+            <select class="väljform" id="tröjor L" name="antal tröjor L">
+                <option value="Väj antal">Välj antal</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label class="textform" for="tröjor XL">Antal tröjor XL (140 kr):</label>
+            <select class="väljform" id="tröjor XL" name="antal tröjor XL">
+                <option value="Väj antal">Välj antal</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label class="textform" for="tröjor XXL">Antal tröjor XXL (140 kr):</label>
+            <select class="väljform" id="tröjor XXL" name="antal tröjor XXL">
+                <option value="Väj antal">Välj antal</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label class="textform" for="tröjor 3XL">Antal tröjor 3XL (140 kr):</label>
+            <select class="väljform" id="tröjor 3XL"  name="antal tröjor 3XL">
+                <option value="Väj antal">Välj antal</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label class="textform" for="meddelande">Meddelande:</label>
+            <input class="väljform" id="meddelande" type="text" name="meddelande">
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Ny beställning">
+
+           <button class="knappform" type="submit">Beställ</button>
+        
+        </form>
+       </div>
+
+       <div class="produkttext">Fri frakt!</div>
+       <br> <br> <br> <br> <br> <br> 
+    
+</body>
+</html>

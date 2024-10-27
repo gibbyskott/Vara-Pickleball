@@ -1,28 +1,241 @@
 body{
-    background-color:rgb(41, 144, 234);
-}
-.header{
-    height: 125px;
-    background-color: white;
-}
-.headertext{
+    background-color: whitesmoke;
     font-family: sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 42.5px;
+}
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    h1{
+        font-family: 'Times New Roman', Times, serif;
+    }
+.header{
+    height: auto;
+    width: 100%;
+    background-color: rgb(41, 144, 234);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
 }
 .logo{
+    height: 100px;
+    width: 100px;
     background-image: url(PNGtransparant500x500.png);
-    width: 300px;
-    height: 300px;
+    background-repeat: no-repeat;
     background-size: contain;
-    margin: auto;
-    margin-top: 70px;
 }
-.text{
+.länkar{
+    color: black;
+    text-decoration: none;
+}
+.länkar:hover {
     color: white;
-    font-size: 20px;
+}
+.länkar.active{
+    color: white;
+}
+
+.meny {
+    display: flex;
+    list-style: none;
+    font-size: 40px;
+    flex-wrap: wrap;
+}
+.meny li {
+    margin: 0px 30px;
+}
+.iframeA{
+    height: calc(100vh - 104px);
+    width: 100%;
+    border: none; 
+}
+.textpickleballbox{
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 2%;
+    background-image: url(pickleball\ i\ vara.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 15%;
+    background-position-x: 98%;
+}
+.textpickleball{
+    font-size: 300%;
+    text-align: center;
+}
+.paragraf{
+    text-align:left;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.box1{
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    justify-self: center;
+}
+.box11{
+    margin-bottom: 2%;
+    width: 40%;
+    min-width: 300px;
+}
+.youtube{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+.pickleballbana{
+    aspect-ratio: 3 / 2;
+    width: 20%;
+}
+.ramshop {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tröja{
+    background-image: url(Tröja.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio:  43 / 25;
+    height: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 0 auto;
+}
+.produkttext{
+    text-align: center;
+}
+.mugg{
+    background-image: url(Bild\ till\ hemsida\ muggar\(klar\).jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 214 / 125;
+    height: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 0 auto;
+}
+.textform {
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-weight: bold;
+    color: black;
+}
+.väljform {
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+.knappform{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.knappform:hover {
+    background-color: rgb(41, 144, 234);
+}
+.header-mobil{
+    height: auto;
+    width: 100%;
+    background-color: rgb(41, 144, 234);
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+}
+.knappmobil{
+    display: none;
+}
+.logo-mobil{
+    height: 100px;
+    width: 100px;
+    background-image: url(PNGtransparant500x500.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 5%;
+}
+.dropdown-länkar a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.dropdown-länkar {
+    display: none;
+    width: 105.5%;
+    background-color: #e0e0e0b9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    box-sizing: border-box;
+}
+.label-knappmobil {
+    margin-left: auto;
+    height: 75px;
+    width: 75px;
+    background-image: url(Hamburger_icon.svg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    top: 2%;
+    right: 2%;
+    position: absolute;
+}
+
+.knappmobil:checked + .dropdown-länkar {
+    display: block;
+}
+.textstart{
+    padding: 0 30%;
+    text-align: left;
+    font-size: 140%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.rubrikstart{
+    font-size: 300%;
+    text-align: center;
+    padding: 2%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.logostart{
+    height: 25%;
+    width: 25%;
+}
+.förbundet{
+    height: 25%;
+    width: 25%;
+}   
+.bilder{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: 550px;
+    margin-right: 550px;
+}
+.kontakt{
+    font-size: 18px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     margin-top: 25px;
@@ -33,79 +246,55 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
 }
-.stadgar{
-    color: black;
-    font-size: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.pickleballbild{
+    display: none;
+}
+.produktundertext
+{
     text-align: center;
-    font-weight: bold;
-    margin-top: 25px;
-    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
 }
-a:hover{
-    color: grey;
+@media (max-width: 812px) {
+.bilder{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 3%;
 }
-a{
-    color: black;  
+.textstart{
+    font-size: 120%;
+    padding: 0 5%;
 }
-* {
-    margin: 0; 
-    padding: 0;
-    box-sizing: border-box;
+.header{
+    display: none;
 }
-@media screen and (max-width: 767px){
-    body{
-        background-color:rgb(41, 144, 234);
-    }
-    .header{
-        height: 100px;
-        background-color: white;
-    }
-    .headertext{
-        font-family: sans-serif;
-        font-size: 25px;
-        font-weight: 600;
-        text-align: center;
-        padding-top: 30px;
-    }
-    .logo{
-        background-image: url(PNGtransparant500x500.png);
-        width: 200px;
-        height: 200px;
-        background-size: contain;
-        margin: auto;
-        margin-top: 20px;
-    }
-    .text{
-        color: white;
-        font-size: 15px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .stadgar{
-        color: black;
-        font-size: 15px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-        font-weight: bold;
-        margin-top: 15px;
-        user-select: none;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-    }
-    a:hover{
-        color: grey;
-    }
-    a{
-        color: black;  
-    }
-    * {
-        margin: 0; 
-        padding: 0;
-        box-sizing: border-box;
-    }  
+.header-mobil{
+    display: flex;
+}
+.textpickleball{
+    font-size: 200%;
+}
+.paragraf{
+    font-size: 90%;
+
+}
+.textpickleballbox{
+    padding-left: 5%;
+    padding-right: 5%;
+    background-image: none;
+}
+.tröja{
+    height: 200px;
+}
+.mugg{
+    height: 200px;
+}
+body {
+    overflow-x: hidden;
+}
+.pickleballbild{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
 }

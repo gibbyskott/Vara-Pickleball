@@ -2,17 +2,35 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" href="logoflik.svg">
+    <link rel="icon" href="PNGtransparant2000x2000.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vara Pickleball</title>
+    <script type="text/javascript" src="main.js" defer></script>
 </head>
 <body>
-    <div class="header"><div class="headertext"> VARA PICKLEBALL</div></div>
-    <div class="logo"></div>
-    <div class="text">Medlemsavgift 200kr</div>
-    <a href="https://drive.google.com/file/d/1uDd98U1pATYtwGZe9grLusqSqql_yb1A/view" target=”_blank”><div class="stadgar">Stadgar</div></a>
-    <a href="https://geflepickleball.se/om-sporten/" target=”_blank”><div class="stadgar">Läs mer om sporten här</div></a>
-    <div class="text">Kontakt: varapickleball@outlook.com</div>
+    <div class="header">
+          <div class="logo" onclick="BytIframe('start.html'); bytafärg(0);";></div>
+            <ul class="meny">
+                <li><a class="länkar" href="start.html" target="iframeA" onclick='bytafärg(0)' >Start</a></li>
+                <li><a class="länkar" href="pickleball.html" target="iframeA" onclick='bytafärg(1)' >Sporten</a></li>
+                <li><a class="länkar" href="shopen.html" target="iframeA" onclick='bytafärg(2)' >Shopen</a></li>
+            </ul>
+
+    </div>
+    <div class="header-mobil">
+        <div class="logo-mobil" onclick="BytIframe('start.html'); bytafärg(0);";></div>
+        <label for="knappmobil" class="label-knappmobil"></label>
+        <input type="checkbox" id="knappmobil" class="knappmobil">
+        <div class="dropdown-länkar">
+                <a href="start.html" target="iframeA"  onclick="bytafärg(0); tabortdropdown()" >Start</a>
+                <a href="pickleball.html" target="iframeA"  onclick="bytafärg(1); tabortdropdown()" >Sporten</a>
+                <a href="shopen.html" target="iframeA"  onclick="bytafärg(2); tabortdropdown()" >Shopen</a>
+        </div>
+    </div>
+
+  
+    <iframe class="iframeA" name="iframeA" id="iframeA" src="start.html"></iframe>
+    
 </body>
 </html>
