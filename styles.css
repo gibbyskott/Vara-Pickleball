@@ -302,4 +302,7 @@ body {
     font-size: 120%;
     padding: 15px;
 }
+.header{
+    display: flexbox;
+}
 }
