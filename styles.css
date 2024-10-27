@@ -303,6 +303,6 @@ body {
     padding: 15px;
 }
 .header{
-    display: flexbox;
+    position: sticky;
 }
 }
