@@ -287,7 +287,7 @@ body{
     background-image: none;
 }
 .tröja{
-    height: 185px;
+    height: 250px;
 }
 .mugg{
     height: 185px;
@@ -308,4 +308,5 @@ body {
 .header{
     position: sticky;
 }
+
 }
